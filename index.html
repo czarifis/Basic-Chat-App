@@ -14,6 +14,7 @@
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
     <!-- CUSTOM STYLE CSS -->
     <link href="assets/css/style.css" rel="stylesheet" />
+
 </head>
 <body>
 
@@ -40,7 +41,7 @@
                                 </ul>
                             </div>
                     </div>
-                    <div class="panel-body chat-box-main">
+                    <div id="panel" class="panel-body chat-box-main">
                         <div class="chat-box-left">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -80,9 +81,10 @@
                     </div>
                     <div class="chat-box-footer">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Enter Text Here...">
+                            <input id="input_id" type="text" class="form-control" placeholder="Enter Text Here...">
                             <span class="input-group-btn">
-                                <button class="btn btn-info" type="button">SEND</button>
+                                <button class="btn btn-info" onclick="sendMessage()" type="button">SEND 1</button>
+                                <button class="btn btn-info" onclick="sendMessage2()" type="button">SEND 2</button>
                             </span>
                         </div>
                     </div>
@@ -98,6 +100,7 @@
     <!-- USING SCRIPTS BELOW TO REDUCE THE LOAD TIME -->
     <!-- CORE JQUERY SCRIPTS FILE -->
     <script src="assets/js/jquery-1.11.1.js"></script>
+    <script src="index.js"></script>
     <!-- CORE BOOTSTRAP SCRIPTS  FILE -->
     <script src="assets/js/bootstrap.js"></script>
 </body>
